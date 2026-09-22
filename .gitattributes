@@ -1,0 +1,6 @@
+*.config text eol=crlf
+*.manifest text eol=crlf
+*.application text eol=crlf
+*.exe binary
+*.dll binary
+*.deploy binary
