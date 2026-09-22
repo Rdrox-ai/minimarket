@@ -15,7 +15,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>true</IsWebBootstrapper>
-    <PublishUrl>C:\Users\terer\OneDrive\Desktop\proyectos visual\proyecto_minimarket_el_puente\minimarket_visual\Updates\</PublishUrl>
+    <PublishUrl>C:\Users\terer\OneDrive\Desktop\proyectos visual\proyecto_minimarket_el_puente\Updates\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Web</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
@@ -25,8 +25,8 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>https://raw.githubusercontent.com/Rdrox-ai/Proyecto_minimarkt_elpuente/main/Updates/</InstallUrl>
-    <ApplicationRevision>3</ApplicationRevision>
+    <InstallUrl>https://raw.githubusercontent.com/Rdrox-ai/minimarket/main/Updates/</InstallUrl>
+    <ApplicationRevision>4</ApplicationRevision>
     <ApplicationVersion>1.0.1.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
