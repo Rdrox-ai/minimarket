@@ -26,7 +26,8 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <InstallUrl>https://raw.githubusercontent.com/Rdrox-ai/minimarket/main/Updates/</InstallUrl>
-    <ApplicationRevision>4</ApplicationRevision>
+    <UpdateUrl>https://raw.githubusercontent.com/Rdrox-ai/minimarket/main/Updates/</UpdateUrl>
+    <ApplicationRevision>5</ApplicationRevision>
     <ApplicationVersion>1.0.1.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
