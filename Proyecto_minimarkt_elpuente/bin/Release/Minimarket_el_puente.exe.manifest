@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Minimarket_el_puente.exe" size="3343288">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Minimarket_el_puente.exe" size="3345848">
       <assemblyIdentity name="Minimarket_el_puente" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>rUV80CEyDFTUOPfCIo+CFDk22lsbP4rex5bTp9mmlC4=</dsig:DigestValue>
+        <dsig:DigestValue>Il4ucUL5Mc2c3+yFHj3RwuTYKMmGmW2rZlRpiM2jcuc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

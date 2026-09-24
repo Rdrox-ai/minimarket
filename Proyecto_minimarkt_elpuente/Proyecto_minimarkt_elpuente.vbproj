@@ -27,7 +27,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <InstallUrl>https://raw.githubusercontent.com/Rdrox-ai/minimarket/main/Updates/</InstallUrl>
     <UpdateUrl>https://raw.githubusercontent.com/Rdrox-ai/minimarket/main/Updates/</UpdateUrl>
-    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationRevision>7</ApplicationRevision>
     <ApplicationVersion>1.0.1.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -172,6 +172,12 @@
     <Compile Include="sumar_productos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="validacion.Designer.vb">
+      <DependentUpon>validacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="validacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="buscar%28venta%29.resx">
@@ -200,6 +206,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="sumar_productos.resx">
       <DependentUpon>sumar_productos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="validacion.resx">
+      <DependentUpon>validacion.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

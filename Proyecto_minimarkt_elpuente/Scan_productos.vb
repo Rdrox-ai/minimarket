@@ -1,8 +1,12 @@
 ﻿Public Class Scan_productos
     Private Sub cargar_grilla()
+        Dim init = New DataTable()
+        Dim tablainit As DataTable = Conexión.consulta("select * from productos ORDER BY codigo asc")
+        DataGridView1.DataSource = tablainit
         If Txtcodigo.Text IsNot "" Then
             Dim dt = New DataTable()
-            Dim tablas As DataTable = Conexión.consulta("select * from productos where codigo =" & Txtcodigo.Text & "")
+            Dim query As String = "select * from productos where codigo =" & Txtcodigo.Text & " ORDER BY codigo asc"
+            Dim tablas As DataTable = Conexión.consulta(query)
             DataGridView1.DataSource = tablas
         End If
         If Txtprod.Text IsNot "" Then
@@ -21,16 +25,16 @@
     End Sub
 
     Private Sub Txtcodigo_TextChanged(sender As Object, e As EventArgs) Handles Txtcodigo.TextChanged
-        Dim id As Integer
-        If Integer.TryParse(Txtcodigo.Text.Trim(), id) Then
+        Dim id As Double
+        If Double.TryParse(Txtcodigo.Text.Trim(), id) Then
             cargar_grilla()
         End If
     End Sub
 
     Private Sub Txtcodigo_KeyDown(sender As Object, e As KeyEventArgs) Handles Txtcodigo.KeyDown
         If e.KeyCode = Keys.Enter Then
-            Dim id As Integer
-            If Not Integer.TryParse(Txtcodigo.Text.Trim(), id) Then
+            Dim id As Double
+            If Not Double.TryParse(Txtcodigo.Text.Trim(), id) Then
                 MsgBox("Debes ingresar únicamente números válidos en el campo ID.", MsgBoxStyle.Critical)
                 Exit Sub
             Else

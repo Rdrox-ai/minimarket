@@ -4,6 +4,11 @@ Public Class sumar_productos
     Public Shared total As Decimal = 0
     Private Sub Txtcodigo_KeyDown(sender As Object, e As KeyEventArgs) Handles Txtcodigo.KeyDown
         If e.KeyCode = Keys.Enter Then
+            Dim id As Double
+            If Not Double.TryParse(Txtcodigo.Text.Trim(), id) Then
+                MsgBox("Debes ingresar únicamente números válidos en el campo ID.", MsgBoxStyle.Critical)
+                Exit Sub
+            End If
             Dim codigo As String = Txtcodigo.Text.Trim()
 
             If Not String.IsNullOrEmpty(codigo) Then
@@ -130,6 +135,10 @@ Public Class sumar_productos
 
 
     Private Sub Textotal_TextChanged(sender As Object, e As EventArgs) Handles Textotal.TextChanged
+
+    End Sub
+
+    Private Sub Txtcodigo_TextChanged(sender As Object, e As EventArgs) Handles Txtcodigo.TextChanged
 
     End Sub
 End Class
