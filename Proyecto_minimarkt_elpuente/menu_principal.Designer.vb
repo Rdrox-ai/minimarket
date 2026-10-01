@@ -22,6 +22,7 @@ Partial Class menu_principal
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Button_escanear = New System.Windows.Forms.Button()
         Me.Button_cargar = New System.Windows.Forms.Button()
         Me.Button_eliminar = New System.Windows.Forms.Button()
@@ -29,6 +30,7 @@ Partial Class menu_principal
         Me.Sumar_productos = New System.Windows.Forms.Button()
         Me.Button_volver = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -101,6 +103,12 @@ Partial Class menu_principal
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
         '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(211, 32)
+        '
         'menu_principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -128,4 +136,5 @@ Partial Class menu_principal
     Friend WithEvents Sumar_productos As Button
     Friend WithEvents Button_volver As Button
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
 End Class

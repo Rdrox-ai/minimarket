@@ -113,6 +113,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="boton_cobrar.Designer.vb">
+      <DependentUpon>boton_cobrar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="boton_cobrar.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="buscar%28venta%29.Designer.vb">
       <DependentUpon>buscar%28venta%29.vb</DependentUpon>
     </Compile>
@@ -180,6 +186,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="boton_cobrar.resx">
+      <DependentUpon>boton_cobrar.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="buscar%28venta%29.resx">
       <DependentUpon>buscar%28venta%29.vb</DependentUpon>
     </EmbeddedResource>
