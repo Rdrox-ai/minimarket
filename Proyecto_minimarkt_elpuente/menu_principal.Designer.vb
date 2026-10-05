@@ -29,8 +29,9 @@ Partial Class menu_principal
         Me.Button_editar = New System.Windows.Forms.Button()
         Me.Sumar_productos = New System.Windows.Forms.Button()
         Me.Button_volver = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Btnreporte = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -94,6 +95,12 @@ Partial Class menu_principal
         Me.Button_volver.Text = "Salir"
         Me.Button_volver.UseVisualStyleBackColor = True
         '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
+        '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.Proyecto_minimarkt_elpuente.My.Resources.Resources.Copilot_20260719_084343
@@ -103,11 +110,15 @@ Partial Class menu_principal
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
         '
-        'ContextMenuStrip1
+        'Btnreporte
         '
-        Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(211, 32)
+        Me.Btnreporte.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btnreporte.Location = New System.Drawing.Point(63, 771)
+        Me.Btnreporte.Name = "Btnreporte"
+        Me.Btnreporte.Size = New System.Drawing.Size(333, 103)
+        Me.Btnreporte.TabIndex = 4
+        Me.Btnreporte.Text = "Reporte de ventas"
+        Me.Btnreporte.UseVisualStyleBackColor = True
         '
         'menu_principal
         '
@@ -118,6 +129,7 @@ Partial Class menu_principal
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button_volver)
         Me.Controls.Add(Me.Button_editar)
+        Me.Controls.Add(Me.Btnreporte)
         Me.Controls.Add(Me.Button_eliminar)
         Me.Controls.Add(Me.Button_cargar)
         Me.Controls.Add(Me.Sumar_productos)
@@ -137,4 +149,5 @@ Partial Class menu_principal
     Friend WithEvents Button_volver As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
+    Friend WithEvents Btnreporte As Button
 End Class

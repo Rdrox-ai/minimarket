@@ -1,7 +1,7 @@
 ﻿Imports Npgsql
 
 Public Class sumar_productos
-    Public Shared total As Decimal = 0
+    Private total As Decimal = 0
     Private Sub Txtcodigo_KeyDown(sender As Object, e As KeyEventArgs) Handles Txtcodigo.KeyDown
         If e.KeyCode = Keys.Enter Then
             Dim id As Double
@@ -77,31 +77,64 @@ Public Class sumar_productos
     End Sub
 
     Private Sub buttoncobrar_Click(sender As Object, e As EventArgs) Handles buttoncobrar.Click
-        DataGridView1.Rows.Clear()
-        total = 0
-        Textotal.Text = ""
-    End Sub
-    Private Sub Eliminar_producto_Click(sender As Object, e As EventArgs) Handles Eliminar_producto.Click
-        If DataGridView1.SelectedRows.Count > 0 Then
-            ' Tomamos la primera fila seleccionada
-            Dim fila As DataGridViewRow = DataGridView1.SelectedRows(0)
+        If DataGridView1.Rows.Count = 0 OrElse total <= 0 Then
+            MsgBox("No hay productos cargados para cobrar.", MsgBoxStyle.Exclamation, "Aviso")
+            Exit Sub
+        End If
 
-            ' Restamos el subtotal de esa fila al total
-            If fila.Cells("Subtotal").Value IsNot Nothing Then
-                total -= Convert.ToDecimal(fila.Cells("Subtotal").Value)
+        Dim f2 As New boton_cobrar(total)
+        f2.ShowDialog()
+
+        If f2.OperacionCompletada Then
+            Dim items = ObtenerItemsTicket()
+            Dim recibido As Decimal = f2.MontoRecibido
+            Dim vuelto As Decimal = Math.Max(0, recibido - total)
+
+            Dim idVenta As Integer = RegistroVentas.GuardarVenta(items, f2.NombreCliente, f2.RucCliente, total, recibido, vuelto)
+            If idVenta = 0 Then
+                MsgBox("La venta no se guardó. Revise antes de continuar.", MsgBoxStyle.Critical)
+                Exit Sub   ' no limpia la pantalla para no perder los productos
             End If
 
-            ' Eliminamos la fila
-            DataGridView1.Rows.Remove(fila)
+            Impresion.ImprimirTicket(items, f2.NombreCliente, f2.RucCliente, total, recibido, vuelto, True)
 
-            ' Actualizamos el texto del total
-            Textotal.Text = "Total: " & total.ToString("N0")
+            DataGridView1.Rows.Clear()
+            total = 0
+            Textotal.Text = ""
+            Conexión.RucGlobal = ""
+            Txtcodigo.Clear()
+            Txtcodigo.Focus()
+        End If
+    End Sub
+
+    Private Function ObtenerItemsTicket() As List(Of ItemTicket)
+        Dim lista As New List(Of ItemTicket)
+        For Each row As DataGridViewRow In DataGridView1.Rows
+            If Not row.IsNewRow AndAlso row.Cells("Codigo").Value IsNot Nothing Then
+                lista.Add(New ItemTicket With {
+                .codigo = row.Cells("Codigo").Value.ToString(),
+                .producto = row.Cells(1).Value.ToString(),
+                .precio = Convert.ToDecimal(row.Cells(2).Value),
+                .cantidad = Convert.ToDouble(row.Cells("Cantidad").Value),
+                .subtotal = Convert.ToDecimal(row.Cells("Subtotal").Value)
+            })
+            End If
+        Next
+        Return lista
+    End Function
+    Private Sub Eliminar_producto_Click(sender As Object, e As EventArgs) Handles Eliminar_producto.Click
+        If DataGridView1.SelectedRows.Count > 0 Then
+            DataGridView1.Rows.Remove(DataGridView1.SelectedRows(0))
+            CalcularTotal()
         Else
             MsgBox("Seleccione un producto para eliminar", MsgBoxStyle.Information)
         End If
     End Sub
 
     Private Sub sumar_productos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        DataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect
+        DataGridView1.MultiSelect = False
+        DataGridView1.AllowUserToAddRows = False
         Me.WindowState = FormWindowState.Maximized
         Txtcodigo.Focus()
     End Sub
@@ -142,4 +175,5 @@ Public Class sumar_productos
     Private Sub Txtcodigo_TextChanged(sender As Object, e As EventArgs) Handles Txtcodigo.TextChanged
 
     End Sub
+
 End Class

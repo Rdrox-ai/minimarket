@@ -37,5 +37,10 @@ Minimarket_el_puente
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="M:Proyecto_minimarkt_elpuente.Impresion.ImprimirTicket(System.Collections.Generic.List{Proyecto_minimarkt_elpuente.ItemTicket},System.String,System.String,System.Decimal,System.Decimal,System.Decimal,System.Boolean)">
+ <summary>
+ Imprime el ticket de venta. Si vistaPrevia = True muestra una vista previa en pantalla.
+ </summary>
+</member>
 </members>
 </doc>

@@ -42,4 +42,9 @@
     Private Sub Button_escanear_KeyDown(sender As Object, e As KeyEventArgs) Handles Button_escanear.KeyDown
 
     End Sub
+
+    Private Sub Btnreporte_Click(sender As Object, e As EventArgs) Handles Btnreporte.Click
+        Dim f As New reporte_ventas()
+        f.ShowDialog()
+    End Sub
 End Class

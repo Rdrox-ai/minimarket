@@ -103,3 +103,5 @@ C:\Users\terer\OneDrive\Desktop\proyectos visual\proyecto_minimarket_el_puente\P
 C:\Users\terer\OneDrive\Desktop\proyectos visual\proyecto_minimarket_el_puente\Proyecto_minimarkt_elpuente\obj\Release\Minimarket_el_puente.pdb
 C:\Users\terer\OneDrive\Desktop\proyectos visual\proyecto_minimarket_el_puente\Proyecto_minimarkt_elpuente\obj\Release\Proyecto_minimarkt_elpuente.validacion.resources
 C:\Users\terer\OneDrive\Desktop\proyectos visual\proyecto_minimarket_el_puente\Proyecto_minimarkt_elpuente\obj\Release\Proyecto_minimarkt_elpuente.boton_cobrar.resources
+C:\Users\terer\OneDrive\Desktop\proyectos visual\proyecto_minimarket_el_puente\Proyecto_minimarkt_elpuente\obj\Release\Proyecto_minimarkt_elpuente.cliente.resources
+C:\Users\terer\OneDrive\Desktop\proyectos visual\proyecto_minimarket_el_puente\Proyecto_minimarkt_elpuente\obj\Release\Proyecto_minimarkt_elpuente.reporte_ventas.resources

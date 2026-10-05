@@ -53,5 +53,36 @@ Module Conexión
         Return s.ToString()
     End Function
 
+    ' Variable pública para guardar el RUC seleccionado
+    Public RucGlobal As String
+
+    ' Función para obtener el nombre a partir del RUC seleccionado
+    Public Function ObtenerNombrePorRucSeleccionado() As String
+        Dim dt As DataTable = consulta("SELECT nombre FROM clientes WHERE ruc = '" & RucGlobal & "'")
+        If dt.Rows.Count > 0 Then
+            Return dt.Rows(0)("nombre").ToString()
+        Else
+            Return ""
+        End If
+    End Function
+
+    ' Función para obtener el RUC (por si lo necesitas en impresión)
+    Public Function ObtenerRucSeleccionado() As String
+        Return RucGlobal
+    End Function
+
+    Public Function ObtenerNombrePorRuc(ByVal ruc As String) As String
+        Dim dt As DataTable = consulta("SELECT nombre FROM clientes WHERE ruc = '" & ruc & "'")
+        If dt.Rows.Count > 0 Then
+            Return dt.Rows(0)("nombre").ToString()
+        Else
+            Return ""
+        End If
+    End Function
+
+    Public Function ObtenerRuc() As String
+        Return RucGlobal
+    End Function
+
 End Module
 
