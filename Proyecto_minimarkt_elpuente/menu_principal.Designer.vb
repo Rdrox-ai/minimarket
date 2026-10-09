@@ -91,7 +91,7 @@ Partial Class menu_principal
         Me.Button_volver.Location = New System.Drawing.Point(52, 40)
         Me.Button_volver.Name = "Button_volver"
         Me.Button_volver.Size = New System.Drawing.Size(226, 73)
-        Me.Button_volver.TabIndex = 5
+        Me.Button_volver.TabIndex = 6
         Me.Button_volver.Text = "Salir"
         Me.Button_volver.UseVisualStyleBackColor = True
         '
@@ -103,6 +103,7 @@ Partial Class menu_principal
         '
         'PictureBox1
         '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = Global.Proyecto_minimarkt_elpuente.My.Resources.Resources.Copilot_20260719_084343
         Me.PictureBox1.Location = New System.Drawing.Point(457, -45)
         Me.PictureBox1.Name = "PictureBox1"
@@ -116,7 +117,7 @@ Partial Class menu_principal
         Me.Btnreporte.Location = New System.Drawing.Point(63, 771)
         Me.Btnreporte.Name = "Btnreporte"
         Me.Btnreporte.Size = New System.Drawing.Size(333, 103)
-        Me.Btnreporte.TabIndex = 4
+        Me.Btnreporte.TabIndex = 5
         Me.Btnreporte.Text = "Reporte de ventas"
         Me.Btnreporte.UseVisualStyleBackColor = True
         '
@@ -124,7 +125,9 @@ Partial Class menu_principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Teal
+        Me.BackColor = System.Drawing.Color.Gainsboro
+        Me.BackgroundImage = Global.Proyecto_minimarkt_elpuente.My.Resources.Resources.fondo_de_pantalla_gris_genial_43w96ugm2ihew1vk
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1821, 890)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button_volver)

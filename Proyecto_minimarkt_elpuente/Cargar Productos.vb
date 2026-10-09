@@ -1,6 +1,7 @@
 ﻿Public Class Cargar_Productos
 
     Private Sub Cargar_Productos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        AplicarFondo(Me)
         Me.WindowState = FormWindowState.Maximized
         cargar_grilla()
     End Sub

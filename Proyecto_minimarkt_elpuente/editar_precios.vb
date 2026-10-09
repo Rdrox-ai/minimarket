@@ -18,6 +18,7 @@
         cargar_grilla()
     End Sub
     Private Sub editar_precios_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        AplicarFondo(Me)
         Me.WindowState = FormWindowState.Maximized
         cargar_grilla()
     End Sub

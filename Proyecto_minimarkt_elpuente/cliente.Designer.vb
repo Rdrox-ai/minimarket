@@ -97,8 +97,9 @@ Partial Class cliente
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label1.Location = New System.Drawing.Point(753, 78)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(176, 29)
@@ -132,8 +133,9 @@ Partial Class cliente
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label2.Location = New System.Drawing.Point(665, 152)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(101, 29)
@@ -143,8 +145,9 @@ Partial Class cliente
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label3.Location = New System.Drawing.Point(702, 229)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(64, 29)
@@ -154,8 +157,9 @@ Partial Class cliente
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label4.Location = New System.Drawing.Point(665, 305)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(110, 29)
@@ -165,8 +169,9 @@ Partial Class cliente
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label5.Location = New System.Drawing.Point(49, 34)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(183, 29)

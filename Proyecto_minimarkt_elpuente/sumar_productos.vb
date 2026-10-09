@@ -112,11 +112,11 @@ Public Class sumar_productos
         For Each row As DataGridViewRow In DataGridView1.Rows
             If Not row.IsNewRow AndAlso row.Cells("Codigo").Value IsNot Nothing Then
                 lista.Add(New ItemTicket With {
-                .codigo = row.Cells("Codigo").Value.ToString(),
-                .producto = row.Cells(1).Value.ToString(),
-                .precio = Convert.ToDecimal(row.Cells(2).Value),
-                .cantidad = Convert.ToDouble(row.Cells("Cantidad").Value),
-                .subtotal = Convert.ToDecimal(row.Cells("Subtotal").Value)
+                .Codigo = row.Cells("Codigo").Value.ToString(),
+                .Producto = row.Cells(1).Value.ToString(),
+                .Precio = Convert.ToDecimal(row.Cells(2).Value),
+                .Cantidad = Convert.ToDouble(row.Cells("Cantidad").Value),
+                .Subtotal = Convert.ToDecimal(row.Cells("Subtotal").Value)
             })
             End If
         Next

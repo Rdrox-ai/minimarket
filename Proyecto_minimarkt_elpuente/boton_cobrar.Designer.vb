@@ -40,7 +40,6 @@ Partial Class boton_cobrar
         Me.Button100k = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtvuelto = New System.Windows.Forms.TextBox()
-        Me.txtruc = New System.Windows.Forms.TextBox()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -49,21 +48,27 @@ Partial Class boton_cobrar
         Me.txtmonto_recibido = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtfactura = New System.Windows.Forms.Button()
-        Me.Txtnombre = New System.Windows.Forms.TextBox()
         Me.Buttonfinalizar = New System.Windows.Forms.Button()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Button10 = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.txtnombre = New System.Windows.Forms.Label()
+        Me.txtruc = New System.Windows.Forms.Label()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label1.Location = New System.Drawing.Point(69, 40)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(92, 29)
@@ -207,6 +212,7 @@ Partial Class boton_cobrar
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label2.Location = New System.Drawing.Point(704, 453)
@@ -222,14 +228,6 @@ Partial Class boton_cobrar
         Me.txtvuelto.Name = "txtvuelto"
         Me.txtvuelto.Size = New System.Drawing.Size(188, 34)
         Me.txtvuelto.TabIndex = 1
-        '
-        'txtruc
-        '
-        Me.txtruc.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtruc.Location = New System.Drawing.Point(205, 193)
-        Me.txtruc.Name = "txtruc"
-        Me.txtruc.Size = New System.Drawing.Size(437, 34)
-        Me.txtruc.TabIndex = 1
         '
         'TextBox6
         '
@@ -255,7 +253,7 @@ Partial Class boton_cobrar
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label4.Location = New System.Drawing.Point(87, 196)
+        Me.Label4.Location = New System.Drawing.Point(133, 214)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(55, 29)
         Me.Label4.TabIndex = 0
@@ -294,9 +292,10 @@ Partial Class boton_cobrar
         'Label7
         '
         Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label7.Location = New System.Drawing.Point(747, 95)
+        Me.Label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label7.Location = New System.Drawing.Point(754, 96)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(225, 29)
         Me.Label7.TabIndex = 0
@@ -311,14 +310,6 @@ Partial Class boton_cobrar
         Me.txtfactura.TabIndex = 4
         Me.txtfactura.Text = "Factura Cliente"
         Me.txtfactura.UseVisualStyleBackColor = True
-        '
-        'Txtnombre
-        '
-        Me.Txtnombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Txtnombre.Location = New System.Drawing.Point(205, 121)
-        Me.Txtnombre.Name = "Txtnombre"
-        Me.Txtnombre.Size = New System.Drawing.Size(437, 34)
-        Me.Txtnombre.TabIndex = 1
         '
         'Buttonfinalizar
         '
@@ -372,12 +363,61 @@ Partial Class boton_cobrar
         Me.PictureBox1.TabIndex = 5
         Me.PictureBox1.TabStop = False
         '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Gainsboro
+        Me.PictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox3.Location = New System.Drawing.Point(225, 194)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(417, 52)
+        Me.PictureBox3.TabIndex = 7
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.Color.Gainsboro
+        Me.PictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox4.Location = New System.Drawing.Point(225, 126)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(417, 50)
+        Me.PictureBox4.TabIndex = 7
+        Me.PictureBox4.TabStop = False
+        '
+        'txtnombre
+        '
+        Me.txtnombre.AutoSize = True
+        Me.txtnombre.BackColor = System.Drawing.Color.Gainsboro
+        Me.txtnombre.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtnombre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.txtnombre.Location = New System.Drawing.Point(242, 142)
+        Me.txtnombre.Name = "txtnombre"
+        Me.txtnombre.Size = New System.Drawing.Size(165, 29)
+        Me.txtnombre.TabIndex = 0
+        Me.txtnombre.Text = "SIN NOMBRE"
+        '
+        'txtruc
+        '
+        Me.txtruc.AutoSize = True
+        Me.txtruc.BackColor = System.Drawing.Color.Gainsboro
+        Me.txtruc.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtruc.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.txtruc.Location = New System.Drawing.Point(242, 214)
+        Me.txtruc.Name = "txtruc"
+        Me.txtruc.Size = New System.Drawing.Size(37, 29)
+        Me.txtruc.TabIndex = 0
+        Me.txtruc.Text = "---"
+        '
         'boton_cobrar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Teal
+        Me.BackColor = System.Drawing.Color.LightSlateGray
+        Me.BackgroundImage = Global.Proyecto_minimarkt_elpuente.My.Resources.Resources.fondo_de_pantalla_gris_genial_43w96ugm2ihew1vk
         Me.ClientSize = New System.Drawing.Size(1277, 642)
+        Me.Controls.Add(Me.txtruc)
+        Me.Controls.Add(Me.txtnombre)
+        Me.Controls.Add(Me.PictureBox4)
+        Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.txtfactura)
         Me.Controls.Add(Me.Buttonfinalizar)
@@ -399,8 +439,6 @@ Partial Class boton_cobrar
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.TextBox6)
-        Me.Controls.Add(Me.txtruc)
-        Me.Controls.Add(Me.Txtnombre)
         Me.Controls.Add(Me.txttotal)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
@@ -413,6 +451,8 @@ Partial Class boton_cobrar
         Me.Text = "boton_cobrar"
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -435,7 +475,6 @@ Partial Class boton_cobrar
     Friend WithEvents Button100k As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents txtvuelto As TextBox
-    Friend WithEvents txtruc As TextBox
     Friend WithEvents TextBox6 As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
@@ -444,10 +483,13 @@ Partial Class boton_cobrar
     Friend WithEvents txtmonto_recibido As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents txtfactura As Button
-    Friend WithEvents Txtnombre As TextBox
     Friend WithEvents Buttonfinalizar As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Button10 As Button
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents txtnombre As Label
+    Friend WithEvents txtruc As Label
 End Class

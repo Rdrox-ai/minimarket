@@ -45,7 +45,6 @@ Partial Class sumar_productos
         'DataGridView1
         '
         Me.DataGridView1.AllowUserToAddRows = False
-        Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonShadow
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
@@ -119,23 +118,24 @@ Partial Class sumar_productos
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label1.Location = New System.Drawing.Point(1162, 87)
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label1.Location = New System.Drawing.Point(1159, 87)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(106, 32)
+        Me.Label1.Size = New System.Drawing.Size(114, 32)
         Me.Label1.TabIndex = 1
-        Me.Label1.Text = "TOTAL"
+        Me.Label1.Text = "TOTAL:"
         '
         'Textotal
         '
         Me.Textotal.BackColor = System.Drawing.SystemColors.InactiveCaption
-        Me.Textotal.Font = New System.Drawing.Font("Microsoft YaHei", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Textotal.Font = New System.Drawing.Font("Microsoft YaHei", 20.0!, System.Drawing.FontStyle.Bold)
         Me.Textotal.Location = New System.Drawing.Point(1077, 153)
         Me.Textotal.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Textotal.Name = "Textotal"
-        Me.Textotal.Size = New System.Drawing.Size(267, 47)
+        Me.Textotal.Size = New System.Drawing.Size(267, 51)
         Me.Textotal.TabIndex = 2
         '
         'Button1
@@ -163,7 +163,7 @@ Partial Class sumar_productos
         'buttoncobrar
         '
         Me.buttoncobrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.buttoncobrar.Location = New System.Drawing.Point(1138, 643)
+        Me.buttoncobrar.Location = New System.Drawing.Point(1132, 642)
         Me.buttoncobrar.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.buttoncobrar.Name = "buttoncobrar"
         Me.buttoncobrar.Size = New System.Drawing.Size(180, 82)
@@ -174,11 +174,11 @@ Partial Class sumar_productos
         'Txtcodigo
         '
         Me.Txtcodigo.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Txtcodigo.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Txtcodigo.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold)
         Me.Txtcodigo.Location = New System.Drawing.Point(368, 85)
         Me.Txtcodigo.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Txtcodigo.Name = "Txtcodigo"
-        Me.Txtcodigo.Size = New System.Drawing.Size(453, 34)
+        Me.Txtcodigo.Size = New System.Drawing.Size(453, 38)
         Me.Txtcodigo.TabIndex = 2
         '
         'Button2
@@ -195,8 +195,9 @@ Partial Class sumar_productos
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!)
-        Me.Label2.ForeColor = System.Drawing.SystemColors.Control
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label2.Location = New System.Drawing.Point(144, 85)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
@@ -209,6 +210,7 @@ Partial Class sumar_productos
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Teal
+        Me.BackgroundImage = Global.Proyecto_minimarkt_elpuente.My.Resources.Resources.fondo_de_pantalla_gris_genial_43w96ugm2ihew1vk
         Me.ClientSize = New System.Drawing.Size(1403, 788)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button2)

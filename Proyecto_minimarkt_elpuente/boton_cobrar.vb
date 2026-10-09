@@ -8,6 +8,7 @@
         total = texto
     End Sub
     Private Sub boton_cobrar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        AplicarFondo(Me)
         PictureBox1.SendToBack()
         ComboBox1.SelectedIndex = 0
         txttotal.Text = total.ToString("N2")
@@ -114,4 +115,15 @@
         End Get
     End Property
 
+    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
+
+    End Sub
+
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+
+    End Sub
+
+    Private Sub txtnombre_Click(sender As Object, e As EventArgs) Handles txtnombre.Click
+
+    End Sub
 End Class

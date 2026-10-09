@@ -1,6 +1,7 @@
 ﻿Public Class reporte_ventas
 
     Private Sub reporte_ventas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        AplicarFondo(Me)
         Me.WindowState = FormWindowState.Maximized
         For Each g In {dgvVentas, dgvDetalle}
             g.ReadOnly = True
@@ -77,6 +78,10 @@
     End Sub
 
     Private Sub btnVolver_Click(sender As Object, e As EventArgs)
+        Me.Close()
+    End Sub
+
+    Private Sub Button_volver_Click(sender As Object, e As EventArgs) Handles Button_volver.Click
         Me.Close()
     End Sub
 End Class

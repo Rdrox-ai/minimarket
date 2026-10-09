@@ -1,4 +1,6 @@
 ﻿Public Class Scan_productos
+
+
     Private Sub cargar_grilla()
         Dim init = New DataTable()
         Dim tablainit As DataTable = Conexión.consulta("select * from productos ORDER BY codigo asc")
@@ -19,6 +21,7 @@
     End Sub
 
     Private Sub Scan_productos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        AplicarFondo(Me)
         Me.WindowState = FormWindowState.Maximized
         cargar_grilla()
         Txtcodigo.Focus()
