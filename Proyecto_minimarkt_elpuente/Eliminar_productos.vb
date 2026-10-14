@@ -18,6 +18,7 @@
         cargar_grilla()
     End Sub
     Private Sub Eliminar_productos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.AutoScaleMode = AutoScaleMode.Font
         AplicarFondo(Me)
         Me.WindowState = FormWindowState.Maximized
         cargar_grilla()

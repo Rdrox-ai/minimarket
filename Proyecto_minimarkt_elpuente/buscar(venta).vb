@@ -51,5 +51,6 @@
 
     Private Sub buscar_por_nombre_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         AplicarFondo(Me)
+        Me.AutoScaleMode = AutoScaleMode.Font
     End Sub
 End Class

@@ -1,5 +1,6 @@
 ﻿Public Class validacion
     Private Sub validacion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.AutoScaleMode = AutoScaleMode.Font
         txtusuario.Focus()
     End Sub
 

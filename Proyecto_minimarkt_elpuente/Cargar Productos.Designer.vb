@@ -37,9 +37,7 @@ Partial Class Cargar_Productos
         Me.Button_nuevo = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button_volver = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Txtcodigo
@@ -187,23 +185,12 @@ Partial Class Cargar_Productos
         Me.Button_volver.Text = "Volver al menú"
         Me.Button_volver.UseVisualStyleBackColor = True
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Image = Global.Proyecto_minimarkt_elpuente.My.Resources.Resources.Mini_Market_El_Puente_120px_transparente
-        Me.PictureBox1.Location = New System.Drawing.Point(1174, 22)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(186, 61)
-        Me.PictureBox1.TabIndex = 11
-        Me.PictureBox1.TabStop = False
-        '
         'Cargar_Productos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Teal
+        Me.BackColor = System.Drawing.SystemColors.ControlDark
         Me.ClientSize = New System.Drawing.Size(1346, 890)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button_volver)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button_nuevo)
@@ -217,7 +204,6 @@ Partial Class Cargar_Productos
         Me.Name = "Cargar_Productos"
         Me.Text = "Cargar_Productos"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -236,5 +222,4 @@ Partial Class Cargar_Productos
     Friend WithEvents Button_nuevo As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button_volver As Button
-    Friend WithEvents PictureBox1 As PictureBox
 End Class

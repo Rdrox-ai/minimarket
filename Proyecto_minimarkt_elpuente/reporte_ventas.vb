@@ -1,6 +1,7 @@
 ﻿Public Class reporte_ventas
 
     Private Sub reporte_ventas_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.AutoScaleMode = AutoScaleMode.Font
         AplicarFondo(Me)
         Me.WindowState = FormWindowState.Maximized
         For Each g In {dgvVentas, dgvDetalle}

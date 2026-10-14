@@ -132,6 +132,7 @@ Public Class sumar_productos
     End Sub
 
     Private Sub sumar_productos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.AutoScaleMode = AutoScaleMode.Font
         DataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect
         DataGridView1.MultiSelect = False
         DataGridView1.AllowUserToAddRows = False

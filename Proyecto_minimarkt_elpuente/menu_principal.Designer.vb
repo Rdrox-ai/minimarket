@@ -30,9 +30,7 @@ Partial Class menu_principal
         Me.Sumar_productos = New System.Windows.Forms.Button()
         Me.Button_volver = New System.Windows.Forms.Button()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Btnreporte = New System.Windows.Forms.Button()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button_escanear
@@ -101,16 +99,6 @@ Partial Class menu_principal
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Image = Global.Proyecto_minimarkt_elpuente.My.Resources.Resources.Copilot_20260719_084343
-        Me.PictureBox1.Location = New System.Drawing.Point(457, -45)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(1226, 842)
-        Me.PictureBox1.TabIndex = 6
-        Me.PictureBox1.TabStop = False
-        '
         'Btnreporte
         '
         Me.Btnreporte.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -129,7 +117,6 @@ Partial Class menu_principal
         Me.BackgroundImage = Global.Proyecto_minimarkt_elpuente.My.Resources.Resources.fondo_de_pantalla_gris_genial_43w96ugm2ihew1vk
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1821, 890)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button_volver)
         Me.Controls.Add(Me.Button_editar)
         Me.Controls.Add(Me.Btnreporte)
@@ -139,7 +126,6 @@ Partial Class menu_principal
         Me.Controls.Add(Me.Button_escanear)
         Me.Name = "menu_principal"
         Me.Text = "menu_principal"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -150,7 +136,6 @@ Partial Class menu_principal
     Friend WithEvents Button_editar As Button
     Friend WithEvents Sumar_productos As Button
     Friend WithEvents Button_volver As Button
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
     Friend WithEvents Btnreporte As Button
 End Class

@@ -15,6 +15,7 @@
     End Sub
 
     Private Sub Scan_productos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.AutoScaleMode = AutoScaleMode.Font
         AplicarFondo(Me)
         Me.WindowState = FormWindowState.Maximized
         cargar_grilla()

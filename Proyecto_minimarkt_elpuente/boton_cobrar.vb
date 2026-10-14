@@ -8,6 +8,7 @@
         total = texto
     End Sub
     Private Sub boton_cobrar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.AutoScaleMode = AutoScaleMode.Font
         AplicarFondo(Me)
         PictureBox1.SendToBack()
         ComboBox1.SelectedIndex = 0
